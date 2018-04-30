@@ -16,12 +16,16 @@
     })
     var marker = new naver.maps.Marker({
       position: posObj,
-      map: obj
+      map: obj,
+      icon: {
+        url: 'http://pha1155.github.io/navermap/bucks.png',
+        size: new naver.maps.Size(50, 50),
+      }
     });
   };
      
   window.addEventListener('load',function(){
-    mapInit(37.3595704, 127.105399)
+    mapInit(37.498860, 127.027618)
   });
   </script>
 </head>
