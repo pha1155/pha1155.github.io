@@ -3,12 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <style>
-    body{background-color: darkblue;}
-    h1{color: #fff;}
-  </style>
+  <script>
+//    document.location="/m"
+//    a=navigator.userAgent;
+    var myuri="http://pha1155.github.io"
+    if(document.referrer.substring(0,myuri.length)!=myuri){
+    var mobileKeyWords = new Array('iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia', 'Opera mini', 'Webos', 'Mot', 'Opera Mobi', 'ieMobile', 'LG');
+    for (var word in mobileKeyWords){
+        if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+            location.href = "/m";
+            break;
+          }
+        else{
+          
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-  <h1>park's hp</h1>
+  <h1>PC 버전 사이트</h1>
+  <a href="/">PC버전 보기</a>
+  <script>
+   
+  </script>
 </body>
 </html>
