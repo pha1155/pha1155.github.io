@@ -15,9 +15,9 @@ a{text-decoration: none;}
 .dot__item:before{content: '';position: absolute;top: 8px;left: 0;width: 2px;height: 2px;background-color: #666;border-radius: 100%;}
 
 /* title */
-.main-title__text{position: relative;padding: 50px 0 60px;font-family: 'SF Pro Display';font-size: 1.875em;color: #ff0073;}
+.main-title__text{position: relative;padding: 50px 0 60px;font-family: 'SF Pro Display','애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', sans-serif;font-size: 1.875em;color: #ff0073;}
 .main-title__text:after{content: '';position: absolute;top: 105px;left: 0;width: 30px;height: 1px;background-color: #ff0073;}
-.sub-title{margin-bottom: 30px;font-family: 'SF Pro Display';}
+.sub-title{margin-bottom: 30px;font-family: 'SF Pro Display','애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', sans-serif;}
 
 /* button */
 .btn-scroll{position: absolute;left: 50%;bottom: 3%;width: 40px;height: 70px;border: 1px solid #ff0073;border-radius: 25px;transform: translate(-50%, -50%);}
@@ -28,7 +28,7 @@ a{text-decoration: none;}
 .top-btn{width: 55px;height: 55px;background: url("../images/icon_top.png") center center no-repeat;}
 
 /* layout */
-.wrap{position: relative;font-family: 'SF Pro Text', sans-serif;}
+.wrap{position: relative;font-family: 'SF Pro Text', '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', sans-serif;}
 .header{position: fixed;top: 0;z-index: 30;width: 100%;}
 .main{position: relative;z-index: 20;margin-top: 79px;}
 .section{padding-bottom: 100px;}
@@ -40,7 +40,7 @@ a{text-decoration: none;}
 .header{padding: 20px 0;background-color: #fff;}
 .header.active{box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);}
 .logo{float: left;}
-.logo__link{font-family: 'SF Pro Display';color: #ff0073;}
+.logo__link{font-family: 'SF Pro Display','애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', sans-serif;color: #ff0073;}
 .mobile-gnb{display: none;position: fixed;top: 25px;right: 30px;z-index: 50;width: 30px;height: 21px;transition: opacity .25s ease;}
 .mobile-gnb i{position: absolute;left: 0;width: 100%;height: 2px;background-color: #ff0073;transition: all .35s ease;}
 .mobile-gnb__second{top: 9px;}
@@ -50,7 +50,7 @@ a{text-decoration: none;}
 .mobile-gnb.active .mobile-gnb__third{transform: translateY(-10px) translateX(0) rotate(-45deg);}
 .nav{float: right;}
 .nav__gnb-item{float: left;}
-.nav__gnb-link{position: relative;padding: 10px 20px;font-family: 'SF Pro Display';font-size: 1.25em;color: #222;line-height: 39px;}
+.nav__gnb-link{position: relative;padding: 10px 20px;font-family: 'SF Pro Display','애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', sans-serif;font-size: 1.25em;color: #222;line-height: 39px;}
 .nav__gnb-link:hover{color: #ff0073;}
 .nav__gnb-link:after {content: '';position: absolute;bottom: 0;left: 0;right: 0;height: 3px;background-color: #ff0073;transform: scaleX(0);}
 .nav__gnb-link.active:after {transform: scaleX(1);transition: 0.2s;}
@@ -84,7 +84,7 @@ a{text-decoration: none;}
 .portfolio__view{position: absolute;overflow: hidden;top: 0;left: 0;bottom: 0;width: 100%;height: 0;opacity:0;}
 .portfolio__info{height: 200px;}
 .portfolio__name-wrap{margin-bottom: 10px;}
-.portfolio__name{margin-bottom: 6px;font-family: 'SF Pro Display';}
+.portfolio__name{margin-bottom: 6px;font-family: 'SF Pro Display','애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', sans-serif;}
 .portfolio__date{color:#999;}
 .portfolio__desc{margin-bottom: 10px;font-size: .8em;line-height: 1.4;color: #222;}
 .portfolio__info-item{margin-bottom: 5px;font-size: .8em;font-weight: bold;line-height: 1.3;}
