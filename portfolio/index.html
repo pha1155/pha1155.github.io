@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta property="og:title" content="Hyeonah park's portfolio">
-  <meta property="og:description" content="프론트엔드개발자 박현아의 포트폴리오 사이트">
-  <meta property="og:image" content="http://pha1155.github.io/portfolio/imgs/bg_preview.jpg">
+  <meta property="og:title" content="박현아 포트폴리오">
+  <meta property="og:description" content="Front-end Developer">
+  <meta property="og:image" content="http://pha1155.cafe24.com/portfolio/images/bg_kakao.jpg">
   <title>박현아 포트폴리오</title>
-<!--  <link rel="icon" href="favicon.ico" type="image/x-icon">-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="font/font.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.min.js"></script>
@@ -15,187 +15,286 @@
   <script src="js/script.js"></script>
 </head>
 <body>
-  <div id="wrap">
-    <header id="header">
-      <div class="full_container">
-        <div class="inner_container">
-          <h1 class="logo"><a href="#home">PHA</a></h1>
-          <nav class="gnb_wrap">
-            <h2 class="ir">주요메뉴</h2>
-            <ul class="gnb clearfix">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact" class="last">Contact</a></li>
-            </ul>
-          </nav>
+  <div class="wrap">
+    <header class="header">
+      <div class="container clearfix">
+        <h1 class="logo"><a class="logo__link" href="#home">Nani</a></h1>
+        <div class="mobile-gnb">
+          <i class="mobile-gnb__first"></i>
+          <i class="mobile-gnb__second"></i>
+          <i class="mobile-gnb__third"></i>
         </div>
+        <nav class="nav">
+          <h2 class="hide">주요메뉴</h2>
+          <ul class="nav__gnb clearfix">
+            <li class="nav__gnb-item"><a class="nav__gnb-link" href="#home">Home</a></li>
+            <li class="nav__gnb-item"><a class="nav__gnb-link" href="#about">About</a></li>
+            <li class="nav__gnb-item"><a class="nav__gnb-link" href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <div id="container">
-      <section id="home">
-        <h2 class="ir">메인화면</h2>
-        <div class="visual_title">
-          <div class="move_text">
-            <span class="txt-rotate" data-period="2000" data-rotate='[ "Front-end Developer." ]'></span>
+    <main class="main">
+      <section id="home" class="section home">
+        <h2 class="hide">메인화면</h2>
+          <div class="home-title">
+            <div class="home-title__move">
+              <span class="home-title__rotate" data-period="2000" data-rotate='[ "Hello nani world." ]'></span>
+            </div>
           </div>
-          <p>Hyeonah Park</p>
-        </div>
-        <a class="btn_scroll" href="#about"></a>
+          <a class="btn-scroll" href="#about"></a>
       </section>
-      <section id="about">
-        <div class="inner_container">
-          <div class="title_wrap">
-            <h2 class="title">About</h2>
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="main-title">
+            <h2 class="main-title__text">About</h2>
           </div>
-          <div class="profile_wrap clearfix">
-            <div class="profile_info">
-              <div class="profile clearfix">
-                <h3 class="sub_title">Profile</h3>
-                <img class="profile_img" src="imgs/about_profile.jpg" alt="증명사진">
-                <ul class="personal_info">
-                  <li class="name">박 현 아</li>
-                  <li class="part">Front-end Developer [신입]</li>
-                  <li>1990.06.25</li>
-                  <li>경기도 구리시</li>
-                  <li>010-2642-7557</li>
-                  <li>pha3113@naver.com</li>
-                </ul>
-                <ul class="character">
-                  <li>. 밝고 활발한 성격으로 분위기 메이커</li>
-                  <li>. 업무에 있어서는 신중한 태도</li>
-                  <li>. 새로운 업무에 두려움이 없으며 적극적으로 배우는 자세</li>
-                  <li>. 실패를 두려워 하지 않는 도전정신</li>
+          <div class="about__profile-wrap clearfix">
+            <div class="about__info">
+              <div class="about__profile clearfix">
+                <h3 class="sub-title">Profile</h3>
+                <img class="about__img" src="images/about_profile.jpg" alt="증명사진">
+                <div class="about__wrap">
+                  <ul class="about__personal">
+                    <li class="about__personal-item">박 현 아</li>
+                    <li class="about__personal-item">Front-end Developer<br>Publisher</li>
+                    <li class="about__personal-item">경기도 구리시</li>
+                    <li class="about__personal-item"><a class="about__personal-link" href="tel:010-2642-7557">010-2642-7557</a></li>
+                    <li class="about__personal-item"><a class="about__personal-link" href="mailto:pha3113@naver.com">pha3113@naver.com</a></li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="about__list-wrap">
+                <li class="about__item-wrap">
+                  <h3 class="sub-title">Education</h3>
+                  <ul class="about__list clearfix">
+                    <li class="about__item">
+                      <h4>패스트캠퍼스</h4>
+                      <p>Javascript 부트 캠프 12기</p>
+                      <p class="about__date">2019.06 - 2019.08</p>
+                    </li>
+                    <li class="about__item">
+                      <h4>그린컴퓨터아트학원</h4>
+                      <p>프론트엔드 개발자 과정</p>
+                      <p class="about__date">2017.11 - 2018.04</p>
+                    </li>
+                    <li class="about__item">
+                      <h4>디자인나스</h4>
+                      <p>웹퍼블리셔 기초 과정</p>
+                      <p class="about__date">2017.06 - 2017.07</p>
+                    </li>
+                    <li class="about__item">
+                      <h4>한국산업기술대학교</h4>
+                      <p>디지털디자인학 전공(수석)</p>
+                      <p class="about__date">2013.03 - 2017.02</p>
+                    </li>
+                    <li class="about__item">
+                      <h4>신구대학교</h4>
+                      <p>경영학 전공</p>
+                      <p class="about__date">2009.03 - 2011.02</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="about__item-wrap">
+                  <h3 class="sub-title">Campany</h3>
+                  <ul class="about__list clearfix">
+                    <li class="about__item">
+                      <h4>슬로워크</h4>
+                      <p>프론트엔드 개발자</p>
+                      <p class="about__date">2019.02 - 재직중</p>
+                    </li>
+                    <li class="about__item">
+                      <h4>이와이드플러스</h4>
+                      <p>홍보,기획 / 대리</p>
+                      <p class="about__date">2011.06 - 2017.04</p>
+                    </li>
+                    <li class="about__item">
+                      <h4>지투비홀딩스</h4>
+                      <p>마케팅 / 사원</p>
+                      <p class="about__date">2010.06 - 2011.06</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="about__item-wrap">
+                  <h3 class="sub-title">Career</h3>
+                  <ul class="dot">
+                    <li class="dot__item">토스 블로그(토스피드) 개편 2020.04 - 2020.06</li>
+                    <li class="dot__item">라이나전성기재단 플랫폼 통합 구축 2019.03 - 2019.09</li>
+                    <li class="dot__item">라이나전성기재단 플랫폼 운영 2019.09 - 2020.11</li>
+                    <li class="dot__item">임팩트스테이션 시공플랫폼 웹사이트 구축 2020.03 - 2020.04</li>
+                    <li class="dot__item">띵동연구소 웹사이트 구축 2020.02 - 2020.03</li>
+                    <li class="dot__item">교육을 바꾸는 사람들 웹사이트 개편 2020.01 - 2020.04</li>
+                    <li class="dot__item">301Network 웹사이트 개편 2019.11 - 2019.12</li>
+                    <li class="dot__item">플레이댓 웹사이트 개편 2019.09 - 2020.01</li>
+                    <li class="dot__item">서울시도시재생지원센터 웹사이트 운영 2019.07 - 2020.06</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="section portfolio">
+        <div class="container">
+          <div class="main-title">
+            <h2 class="main-title__text">Portfolio</h2>
+          </div>
+          <ul class="portfolio__list clearfix">
+            <li class="portfolio__item">
+              <div class="portfolio__img-wrap">
+                <img class="portfolio__img" src="images/img_project-toss.png" alt="토스 블로그(토스피드)">
+                <a class="portfolio__view" href="https://blog.toss.im" target="_blank">
+                  <span class="btn-view">View detail</span>
+                </a>
+              </div>
+              <div class="portfolio__info">
+                <div class="portfolio__name-wrap">
+                  <h3 class="portfolio__name">토스 블로그(토스피드) 개편</h3>
+                  <span class="portfolio__date">2020.04 - 2020.06</span>
+                </div>
+                <p class="portfolio__desc">
+                  금융앱 토스의 블로그인 토스피드의 디자인 개편 프로젝트의 리뉴얼을 진행하였습니다.
+                </p>
+                <ul class="portfolio__info-list">
+                  <li class="portfolio__info-item">개발 참여도 100%</li>
                 </ul>
               </div>
-              <div class="education">
-                <h3 class="sub_title">Education</h3>
-                <ul class="edu_list clearfix">
-                  <li>
-                    <p>한국산업기술대학교</p>
-                    <p>디지털디자인학 전공(수석)</p>
-                    <p class="date">2013.03 - 2017.02</p>
-                  </li>
-                  <li>
-                    <p>그린컴퓨터아트학원</p>
-                    <p>프론트엔드 개발자과정</p>
-                    <p class="date">2017.11 - 2018.04</p>
-                  </li>
-                  <li>
-                    <p>디자인나스</p>
-                    <p>웹퍼블리셔 기초과정</p>
-                    <p class="date">2017.06 - 2017.07</p>
-                  </li>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__img-wrap">
+                <img class="portfolio__img" src="images/img_project-lina.png" alt="라이나전성기재단">
+                <a class="portfolio__view" href="https://www.junsungki.com" target="_blank">
+                  <span class="btn-view">View detail</span>
+                </a>
+              </div>
+              <div class="portfolio__info">
+                <div class="portfolio__name-wrap">
+                  <h3 class="portfolio__name">라이나전성기재단 플랫폼 통합 구축</h3>
+                  <span class="portfolio__date">2019.03 - 2019.09</span>
+                </div>
+                <p class="portfolio__desc">
+                  재단의 공식 사이트인 라이나 전성기 재단, 교육과 사회 참여가 목적인 전성기 캠퍼스, 흥미로운 읽을거리를 제공하는 전성기 사이트인 3개의 사이트를 하나의 사이트로 통합하여 제작하였습니다.
+                </p>
+                <ul class="portfolio__info-list">
+                  <li class="portfolio__info-item">개발 참여도 70%</li>
                 </ul>
               </div>
-            </div>
-            <div class="skill">
-              <h3 class="sub_title">Skill</h3>
-              <ul class="skill_dsc">
-                <li>. HTML5, CSS3 웹 표준 마크업</li>
-                <li>. 웹 접근성 준수</li>
-                <li>. Cross-Browsing</li>
-                <li>. 반응형/적응형 제작</li>
-                <li>. jQuery 플러그인 활용</li>
-                <li>. Javascript 알고리즘 이해</li>
-                <li>. 그누보드 사용 경험</li>
-                <li>. GitHub 오픈소스 활용</li>
-                <li>. 커뮤니케이션 능력</li>
-              </ul>
-              <ul class="skill_bar">
-                <li>
-                  <span>HTML</span>
-                  <div class="bar_wrap">
-                    <div class="bar_basic"></div>
-                    <div class="bar_move"></div>
-                  </div>
-                </li>
-                <li>
-                  <span>CSS</span>
-                  <div class="bar_wrap">
-                    <div class="bar_basic"></div>
-                    <div class="bar_move"></div>
-                  </div>
-                </li>
-                <li>
-                  <span>jQuery</span>
-                  <div class="bar_wrap">
-                    <div class="bar_basic"></div>
-                    <div class="bar_move"></div>
-                  </div>
-                </li>
-                <li>
-                  <span>JavaScript</span>
-                  <div class="bar_wrap">
-                    <div class="bar_basic"></div>
-                    <div class="bar_move"></div>
-                  </div>
-                </li>
-                <li>
-                  <span>Photoshop</span>
-                  <div class="bar_wrap">
-                    <div class="bar_basic"></div>
-                    <div class="bar_move"></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__img-wrap">
+                <img class="portfolio__img" src="images/img_project-hiconcept.png" alt="임팩트스테이션">
+                <a class="portfolio__view" href="https://hiconcept.kr" target="_blank">
+                  <span class="btn-view">View detail</span>
+                </a>
+              </div>
+              <div class="portfolio__info">
+                <div class="portfolio__name-wrap">
+                  <h3 class="portfolio__name">임팩트스테이션 시공플랫폼 웹사이트 구축</h3>
+                  <span class="portfolio__date">2020.03 - 2020.04</span>
+                </div>
+                <p class="portfolio__desc">
+                  나에게 맞는 인테리어를 찾아주는 시공플랫폼 웹사이트를 구축하였습니다.
+                </p>
+                <ul class="portfolio__info-list">
+                  <li class="portfolio__info-item">개발 참여도 100%</li>
+                </ul>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__img-wrap">
+                <img class="portfolio__img" src="images/img_project-thinkdong.png" alt="띵동연구소">
+                <a class="portfolio__view" href="https://thinkdong.com" target="_blank">
+                  <span class="btn-view">View detail</span>
+                </a>
+              </div>
+              <div class="portfolio__info">
+                <div class="portfolio__name-wrap">
+                  <h3 class="portfolio__name">띵동연구소 웹사이트 구축</h3>
+                  <span class="portfolio__date">2020.02 - 2020.03</span>
+                </div>
+                <p class="portfolio__desc">
+                  ‘하고 싶은 활동’을 매개로 관계를 쌓고 ‘함께 할 수 있는 것’을 찾아 커뮤니티를 만드는 관악구 청년커뮤니티 플랫폼 사이트를 구축하였습니다.
+                </p>
+                <ul class="portfolio__info-list">
+                  <li class="portfolio__info-item">개발 참여도 100%</li>
+                </ul>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__img-wrap">
+                <img class="portfolio__img" src="images/img_project-kyobasa.png" alt="교육을 바꾸는 사람들">
+                <a class="portfolio__view" href="https://21erick.org" target="_blank">
+                  <span class="btn-view">View detail</span>
+                </a>
+              </div>
+              <div class="portfolio__info">
+                <div class="portfolio__name-wrap">
+                  <h3 class="portfolio__name">교육을 바꾸는 사람들 웹사이트 개편</h3>
+                  <span class="portfolio__date">2020.01 - 2020.04</span>
+                </div>
+                <p class="portfolio__desc">
+                  ‘교육을바꾸는사람들'(이하 교·바·사)는 소외와 차별 없는 학교교육의 실현을 돕기 위해 끊임없이 연구·학습하고, 비판적 목소리를 내는 공익 시민단체입니다.<br>
+                  카테고리 필터와 태그 기능을 추가하여 연관 칼럼에 대한 정보 탐색 편의를 높였습니다.
+                </p>
+                <ul class="portfolio__info-list">
+                  <li class="portfolio__info-item">개발 참여도 100%</li>
+                </ul>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__img-wrap">
+                <img class="portfolio__img" src="images/img_project-301.png" alt="301Network">
+                <a class="portfolio__view" href="https://301.or.kr" target="_blank">
+                  <span class="btn-view">View detail</span>
+                </a>
+              </div>
+              <div class="portfolio__info">
+                <div class="portfolio__name-wrap">
+                  <h3 class="portfolio__name">301Network 웹사이트 개편</h3>
+                  <span class="portfolio__date">2019.11 - 2019.12</span>
+                </div>
+                <p class="portfolio__desc">
+                  의료사각지대 해소를 통한 건강권 증진사업을 위한 301Network 웹사이트를 리뉴얼 하였습니다.
+                </p>
+                <ul class="portfolio__info-list">
+                  <li class="portfolio__info-item">개발 참여도 100%</li>
+                </ul>
+              </div>
+            </li>
+            <!-- <li class="portfolio__item">
+              <div class="portfolio__img-wrap">
+                <img class="portfolio__img" src="images/pf_02.png" alt="플레이댓">
+                <a class="portfolio__view" href="https://playthat.me" target="_blank">
+                  <span class="btn-view">View detail</span>
+                </a>
+              </div>
+              <div class="portfolio__info">
+                <div class="portfolio__name-wrap">
+                  <h3 class="portfolio__name">플레이댓 웹사이트 개편</h3>
+                  <span class="portfolio__date">2019.09 - 2020.01</span>
+                </div>
+                <p class="portfolio__desc">
+                  플레이댓은 작가와 대중이 소통할 수 있는 놀이터입니다.
+                  작가는 자신의 작품이나 작업 결과를 웹 포트폴리오 형태로 공개할 수 있으며, 대중은 전시회나 갤러리를 둘러보듯 다양한 작품들을 살펴보며 자신이 느끼는 감상을 키워드 형태로 남길 수 있습니다.
+                  감상 키워드는 작품별로 최대 3개까지 남길 수 있으며, 등록된 감상키워드는 모두에게 공유됩니다.
+                  플레이댓은 이렇게 작품을 공유하고 감상을 남기는 플랫폼의 역할을 할 뿐만 아니라, 언더그라운드 작가의 작품에 관심 있는 기업이 작가에게 아트 콜라보레이션을 의뢰할 수 있는 중개 플랫폼 기능도 함께 제공합니다.
+                  이를 통해 기업과 작가 모두에게 도움이 되는 서비스를 제공할 수 있도록 제작되었습니다.
+                </p>
+                <ul class="portfolio__info-list">
+                  <li class="portfolio__info-item">개발 참여도 50%</li>
+                </ul>
+              </div>
+            </li> -->
+          </ul>
         </div>
       </section>
-      <section id="portfolio">
-        <div class="inner_container">
-          <div class="title_wrap">
-            <h2 class="title">Portfolio</h2>
-          </div>
-          <div class="pf_list pf_01 clearfix">
-            <div class="pf_info">
-              <span class="pf_num">01</span>
-              <h3 class="pf_name">테팔 웹사이트 리뉴얼(포트폴리오용)</h3>
-              <p class="pf_dsc">그누보드를 이용하여 PHP 게시판을 생성하여 제작하였습니다.</p>
-              <ul class="pf_list">
-                <li>2018.05.08 - 2018.06.13</li>
-                <li>웹 표준, 웹 접근성, Cross-Browsing</li>
-                <li>HTML/CSS/jQuery</li>
-                <li>기획/디자인/개발 참여도 100%</li>
-              </ul>
-              <a class="btn_view" href="http://pha1155.cafe24.com/tefal" target="_blank">View</a>
-            </div>
-            <img class="pf_img" src="imgs/pf_01.png" alt="테팔사이트">
-          </div>
-          <div class="pf_list pf_02 clearfix">
-            <div class="pf_info">
-              <span class="pf_num">02</span>
-              <h3 class="pf_name">포트폴리오 랜딩페이지 구축</h3>
-              <p class="pf_dsc">사이트 설명</p>
-              <ul class="pf_list">
-                <li>2018.05.08 - 2018.06.13</li>
-                <li>웹 표준, 웹 접근성, Cross-Browsing, 반응형 웹</li>
-                <li>HTML/CSS/Javascript</li>
-                <li>기획/디자인/개발 참여도 100%</li>
-              </ul>
-              <a class="btn_view" href="#">View</a>
-            </div>
-            <img class="pf_img" src="imgs/pf_01.png" alt="랜딩페이지">
-          </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="top-btn-wrap">
+          <a href="#" class="top-btn hide-2">위로</a>
         </div>
-      </section>
-      <section id="contact">
-        <div class="inner_container">
-          <div class="title_wrap">
-            <h2 class="title">Contact Us</h2>
-          </div>
-          <p class="email">pha3113@naver.com</p>
-          <p>010-2642-7557</p>
-        </div>
-      </section>
-    </div>
-    <div class="top_btn_wrap">
-      <a href="#" class="top_btn ir_2">위로</a>
-    </div>
-    <footer id="footer">
-      <div class="inner_container">
-        <p>Copyright ⓒ 2018 Hyeonah Park All right reserved.</p>
+        <p class="footer__copyright">Copyright ⓒ 2018 Nani All right reserved.</p>
       </div>
     </footer>
   </div>
