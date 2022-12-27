@@ -1,0 +1,31 @@
+.App-header {
+  min-height: 100vh;
+  padding: 50px;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-count {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.App-button-wrap {
+  margin-top: 50px;
+}
+
+.App-button {
+  width: 50px;
+  margin: 2px;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #888;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.App-button:hover {
+  background-color: blue;
+  border-color: blue;
+  color: #fff;
+}
