@@ -17,6 +17,7 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
+    "html-webpack-plugin": "^5.6.0",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4"
   },
