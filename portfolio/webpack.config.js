@@ -10,9 +10,6 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: 'PARK HYOEN AH`s portfolio',
-			minify: {
-				collapseWhitespace: true
-			},
 			hash: true,
 			template: './src/index.ejs'
 		})
