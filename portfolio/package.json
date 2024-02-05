@@ -1,11 +1,15 @@
 {
+  "homepage": "https://pha1155.github.io/portfolio",
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --progress --config webpack.config.js --watch"
+    "dev": "webpack --progress --config webpack.config.js --watch",
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "sass": "^1.70.0"
   }
 }
