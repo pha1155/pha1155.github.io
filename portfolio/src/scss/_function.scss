@@ -1,0 +1,16 @@
+:root {
+	--colorWhite: #fff;
+	--colorBlue: #6B98DC;
+	--colorGray: #999;
+	--colorGrayDark: #202029;
+	--defaultFontSize: 14px;
+	--defaultFontWeight: 400;
+	--defaultLineHeight: 20px;
+}
+
+@mixin defaultFontSet {
+	color: var(--colorGrayDark);
+	font-weight: var(--defaultFontWeight);
+	font-size: var(--defaultFontSize);
+	line-height: var(--defaultLineHeight);
+}

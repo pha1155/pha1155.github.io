@@ -1,6 +1,6 @@
-@import "_common";
+@import "function.scss";
 
 .wrap {
-	background-color: #202029;
-	color: #fff;
+	background-color: var(--colorGrayDark);
+	color: var(--colorWhite);
 }
