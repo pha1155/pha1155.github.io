@@ -1,6 +1,359 @@
 @import "_function", "_common";
 
-.wrap {
+body {
 	background-color: var(--colorGrayDark);
-	color: var(--colorWhite);
+}
+
+.wrap {
+	@include flex(150px);
+	width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	box-sizing: border-box;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	min-width: 370px;
+	max-height: 100vh;
+	padding-top: 100px;
+  padding-bottom: 100px;
+	box-sizing: border-box;
+
+	&_wrap {
+		.title {
+			&_sub {
+				@include h2;
+				margin-bottom: 10px;
+			}
+
+			&_main {
+				@include h1;
+				margin-bottom: 40px;
+			}
+
+			&_info {
+				margin-bottom: 100px;
+				font-size: 18px;
+				font-weight: 200;
+				line-height: 22px;
+				color: var(--colorWhite);
+				white-space: pre-wrap;
+			}
+		}
+	}
+
+	&_nav {
+		.nav {
+			&_list {
+				& > li {
+					
+	
+					& > a {
+						display: block;
+						position: relative;
+						padding: 6px 0 6px 28px;
+						color: var(--colorWhite);
+						font-size: 18px;
+						font-weight: var(--defaultFontWeight);
+						opacity: .3;
+						text-transform: capitalize;
+						@include transition;
+	
+						&::before {
+							content: "";
+							position: absolute;
+							top: 50%;
+							left: 0;
+							width: 20px;
+							height: 1px;
+							background-color: var(--colorWhite);
+							opacity: .3;
+							@include transition;
+						}
+					}
+		
+					&.selected {
+						& > a {
+							padding-left: 48px;
+							color: var(--colorWhite);
+							font-weight: var(--fontWeightBold);
+							opacity: 1;
+	
+							&::before {
+								width: 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&_link {
+		@include flex(8px);
+
+		& > li {
+			width: 24px;
+			height: 24px;
+
+			& > a {
+				display: block;
+
+				.link {
+					&_title {
+						@include srOnly;
+					}
+				}
+			}
+
+			&:hover {
+				& > a {
+					svg {
+						path {
+							fill-opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.main {
+  padding-bottom: 100px;
+
+	section {
+		padding-top: 100px;
+
+		.about {
+			&_info {
+				@include defaultFontSet;
+				margin-bottom: 20px;
+				white-space: pre-wrap;
+			}
+
+			&_list {
+				& > li {
+					position: relative;
+					padding-left: 12px;
+					font-weight: var(--defaultFontWeight);
+					font-size: var(--defaultFontSize);
+					line-height: 24px;
+					color: var(--colorGray);
+
+					&::before {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 0;
+						width: 4px;
+						height: 4px;
+						border-radius: 50%;
+						background-color: var(--colorGray);
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+
+		.experience {
+			&_item {
+				& + .experience_item {
+					margin-top: 40px;
+				}
+			}
+
+			&_period {
+				position: relative;
+				display: block;
+				margin-bottom: 16px;
+				padding-bottom: 12px;
+				font-weight: var(--fontWeightBold);
+				font-size: 12px;
+				line-height: var(--defaultLineHeight);
+				color: var(--colorWhite);
+
+				&::before {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 20px;
+					height: 1px;
+					background-color: var(--colorWhite);
+				}
+			}
+
+			&_company {
+				@include h3;
+				margin-bottom: 12px;
+			}
+
+			&_position {
+				@include defaultFontSet;
+				margin-bottom: 12px;
+			}
+
+			&_info {
+				@include defaultFontSet;
+				white-space: pre-wrap;
+			}
+		}
+
+		.portfolio {
+			&_list {
+				@include grid(2, 40px 0);
+			}
+
+			&_item {
+				&.closed {
+					cursor: not-allowed;
+
+					.portfolio {
+						&_link {
+							pointer-events: none;
+						}
+					}
+
+					&:hover {
+						.portfolio {
+							&_img {
+								&::before {
+									background-color: var(--colorBlack);
+								}
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.portfolio {
+						&_link {
+							border: 1px solid rgba(255, 255, 255, .05);
+							border-radius: 20px;
+							background-color: rgba(32, 32, 41, .03);
+							@include transition;
+						}
+
+						&_number {
+							color: var(--colorWhite);
+							@include transition;
+						}
+
+						&_img {
+							&::before {
+								content: "";
+								position: absolute;
+								top: 0;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								background-color: var(--colorBlueDark);
+								opacity: .6;
+							}
+
+							.img {
+								&_text {
+									display: block;
+								}
+							}
+						}
+
+						&_skill {
+							& > li {
+								color: var(--colorGrayDark);
+								background: linear-gradient(90deg, rgba(157, 161, 251, .7) 0%, rgba(107, 152, 220, .7) 100%);
+								@include transition;
+							}
+						}
+					}
+				}
+			}
+
+			&_link {
+				display: block;
+				padding: 20px 10px;
+				border: 1px solid transparent;
+				@include transition;
+			}
+
+			&_number {
+				display: block;
+				margin-bottom: 8px;
+				font-weight: var(--fontWeightBold);
+				font-size: 12px;
+				line-height: var(--defaultLineHeight);
+				color: var(--colorGray);
+				@include transition;
+			}
+
+			&_img {
+				overflow: hidden;
+				position: relative;
+				border-radius: 8px;
+
+				& > img {
+					display: block;
+					width: 100%;
+					@include transition;
+				}
+
+				.img {
+					&_text {
+						display: none;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						font-size: 12px;
+						font-weight: var(--defaultFontWeight);
+						line-height: 14px;
+						color: var(--colorWhite);
+					}
+				}
+			}
+
+			&_info {
+				padding-top: 10px;
+			}
+
+			&_title {
+				@include h3;
+				margin-bottom: 8px;
+			}
+
+			&_period {
+				display: block;
+				font-weight: var(--defaultFontWeight);
+				font-size: var(--defaultFontSize);
+				line-height: 16px;
+				color: var(--colorGray);
+				margin-bottom: 16px;
+			}
+
+			&_skill {
+				@include flex(8px);
+				flex-wrap: wrap;
+
+				& > li {
+					padding: 4px 10px;
+					border-radius: 100px;
+					color: var(--colorBlue);
+					font-weight: var(--defaultFontWeight);
+					font-size: var(--defaultFontSize);
+					line-height: var(--defaultLineHeight);
+					background-color: rgba(107, 152, 220, .1);
+					@include transition;
+				}
+			}
+		}
+	}
 }

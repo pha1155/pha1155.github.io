@@ -1,16 +1,69 @@
 :root {
 	--colorWhite: #fff;
 	--colorBlue: #6B98DC;
+	--colorBlueDark: #021F2F;
 	--colorGray: #999;
 	--colorGrayDark: #202029;
+	--colorBlack: #000;
 	--defaultFontSize: 14px;
 	--defaultFontWeight: 400;
 	--defaultLineHeight: 20px;
+	--fontWeightBold: 700;
 }
 
 @mixin defaultFontSet {
-	color: var(--colorGrayDark);
+	color: var(--colorGray);
 	font-weight: var(--defaultFontWeight);
 	font-size: var(--defaultFontSize);
 	line-height: var(--defaultLineHeight);
+}
+
+@mixin h1 {
+	font-size: 40px;
+	font-weight: var(--fontWeightBold);
+	line-height: 48px;
+	color: var(--colorWhite);
+}
+
+@mixin h2 {
+	font-size: 20px;
+	font-weight: var(--fontWeightBold);
+	line-height: var(--defaultLineHeight);
+	color: var(--colorWhite);
+}
+
+@mixin h3 {
+	font-size: 16px;
+	font-weight: var(--fontWeightBold);
+	line-height: var(--defaultLineHeight);
+	color: var(--colorWhite);
+}
+
+@mixin srOnly {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+
+@mixin transition {
+	transition-property: all;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	transition-duration: .15s;
+}
+
+@mixin flex ($gap: 0) {
+	display: flex;
+	gap: $gap;
+}
+
+@mixin grid ($columns: 0, $gap: 0) {
+	display: grid;
+	grid-template-columns: repeat($columns, 1fr);
+	gap: $gap;
 }

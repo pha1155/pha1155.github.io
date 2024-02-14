@@ -1,11 +1,14 @@
 :root {
   --colorWhite: #fff;
   --colorBlue: #6B98DC;
+  --colorBlueDark: #021F2F;
   --colorGray: #999;
   --colorGrayDark: #202029;
+  --colorBlack: #000;
   --defaultFontSize: 14px;
   --defaultFontWeight: 400;
   --defaultLineHeight: 20px;
+  --fontWeightBold: 700;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -41,7 +44,315 @@ a {
   text-decoration: none;
 }
 
-.wrap {
+body {
   background-color: var(--colorGrayDark);
+}
+
+.wrap {
+  display: flex;
+  gap: 150px;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-width: 370px;
+  max-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+.header_wrap .title_sub {
+  font-size: 20px;
+  font-weight: var(--fontWeightBold);
+  line-height: var(--defaultLineHeight);
   color: var(--colorWhite);
+  margin-bottom: 10px;
+}
+.header_wrap .title_main {
+  font-size: 40px;
+  font-weight: var(--fontWeightBold);
+  line-height: 48px;
+  color: var(--colorWhite);
+  margin-bottom: 40px;
+}
+.header_wrap .title_info {
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 22px;
+  color: var(--colorWhite);
+  white-space: pre-wrap;
+}
+.header_nav .nav_list > li > a {
+  display: block;
+  position: relative;
+  padding: 6px 0 6px 28px;
+  color: var(--colorWhite);
+  font-size: 18px;
+  font-weight: var(--defaultFontWeight);
+  opacity: 0.3;
+  text-transform: capitalize;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.header_nav .nav_list > li > a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: var(--colorWhite);
+  opacity: 0.3;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.header_nav .nav_list > li.selected > a {
+  padding-left: 48px;
+  color: var(--colorWhite);
+  font-weight: var(--fontWeightBold);
+  opacity: 1;
+}
+.header_nav .nav_list > li.selected > a::before {
+  width: 40px;
+}
+.header_link {
+  display: flex;
+  gap: 8px;
+}
+.header_link > li {
+  width: 24px;
+  height: 24px;
+}
+.header_link > li > a {
+  display: block;
+}
+.header_link > li > a .link_title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.header_link > li:hover > a svg path {
+  fill-opacity: 1;
+}
+
+.main {
+  padding-bottom: 100px;
+}
+.main section {
+  padding-top: 100px;
+}
+.main section .about_info {
+  color: var(--colorGray);
+  font-weight: var(--defaultFontWeight);
+  font-size: var(--defaultFontSize);
+  line-height: var(--defaultLineHeight);
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+.main section .about_list > li {
+  position: relative;
+  padding-left: 12px;
+  font-weight: var(--defaultFontWeight);
+  font-size: var(--defaultFontSize);
+  line-height: 24px;
+  color: var(--colorGray);
+}
+.main section .about_list > li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--colorGray);
+  transform: translateY(-50%);
+}
+.main section .experience_item + .experience_item {
+  margin-top: 40px;
+}
+.main section .experience_period {
+  position: relative;
+  display: block;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  font-weight: var(--fontWeightBold);
+  font-size: 12px;
+  line-height: var(--defaultLineHeight);
+  color: var(--colorWhite);
+}
+.main section .experience_period::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: var(--colorWhite);
+}
+.main section .experience_company {
+  font-size: 16px;
+  font-weight: var(--fontWeightBold);
+  line-height: var(--defaultLineHeight);
+  color: var(--colorWhite);
+  margin-bottom: 12px;
+}
+.main section .experience_position {
+  color: var(--colorGray);
+  font-weight: var(--defaultFontWeight);
+  font-size: var(--defaultFontSize);
+  line-height: var(--defaultLineHeight);
+  margin-bottom: 12px;
+}
+.main section .experience_info {
+  color: var(--colorGray);
+  font-weight: var(--defaultFontWeight);
+  font-size: var(--defaultFontSize);
+  line-height: var(--defaultLineHeight);
+  white-space: pre-wrap;
+}
+.main section .portfolio_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 0;
+}
+.main section .portfolio_item.closed {
+  cursor: not-allowed;
+}
+.main section .portfolio_item.closed .portfolio_link {
+  pointer-events: none;
+}
+.main section .portfolio_item.closed:hover .portfolio_img::before {
+  background-color: var(--colorBlack);
+}
+.main section .portfolio_item:hover .portfolio_link {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  background-color: rgba(32, 32, 41, 0.03);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.main section .portfolio_item:hover .portfolio_number {
+  color: var(--colorWhite);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.main section .portfolio_item:hover .portfolio_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--colorBlueDark);
+  opacity: 0.6;
+}
+.main section .portfolio_item:hover .portfolio_img .img_text {
+  display: block;
+}
+.main section .portfolio_item:hover .portfolio_skill > li {
+  color: var(--colorGrayDark);
+  background: linear-gradient(90deg, rgba(157, 161, 251, 0.7) 0%, rgba(107, 152, 220, 0.7) 100%);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.main section .portfolio_link {
+  display: block;
+  padding: 20px 10px;
+  border: 1px solid transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.main section .portfolio_number {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: var(--fontWeightBold);
+  font-size: 12px;
+  line-height: var(--defaultLineHeight);
+  color: var(--colorGray);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.main section .portfolio_img {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+.main section .portfolio_img > img {
+  display: block;
+  width: 100%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.main section .portfolio_img .img_text {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: var(--defaultFontWeight);
+  line-height: 14px;
+  color: var(--colorWhite);
+}
+.main section .portfolio_info {
+  padding-top: 10px;
+}
+.main section .portfolio_title {
+  font-size: 16px;
+  font-weight: var(--fontWeightBold);
+  line-height: var(--defaultLineHeight);
+  color: var(--colorWhite);
+  margin-bottom: 8px;
+}
+.main section .portfolio_period {
+  display: block;
+  font-weight: var(--defaultFontWeight);
+  font-size: var(--defaultFontSize);
+  line-height: 16px;
+  color: var(--colorGray);
+  margin-bottom: 16px;
+}
+.main section .portfolio_skill {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.main section .portfolio_skill > li {
+  padding: 4px 10px;
+  border-radius: 100px;
+  color: var(--colorBlue);
+  font-weight: var(--defaultFontWeight);
+  font-size: var(--defaultFontSize);
+  line-height: var(--defaultLineHeight);
+  background-color: rgba(107, 152, 220, 0.1);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
 }

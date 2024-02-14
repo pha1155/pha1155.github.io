@@ -1,0 +1,166 @@
+{
+	"header": {
+		"titleMain": "PARK HYOEN AH",
+		"titleSub": "Junior web developer",
+		"titleInfo": "Build with User eXperience in mind,\nI started my career as a publisher (mark up engineer)\nBut I’m interested in new tech and ready to learn.",
+		"nav": [
+			"about",
+			"experience",
+			"portfolio"
+		]
+	},
+	"main": {
+		"about": {
+			"info": "경영학과를 전공하였으며 첫 마케팅 회사에 입사하여 마케팅 업무를 하면서 커리어를 시작하였습니다.\n이후 웹 에이전시로 이직하면서 IT업계의 에코 시스템을 깊게 이해하게 되었습니다. 평소에 디자인에 관심이 많았지만 감각이 부족해서 직접 디자인을 하는 것에는 자신이 없었기 때문에 디자이너가 만들어준 디자인을 코드로서 유저들이 보는 화면으로 구현하는 퍼블리셔라는 직업에 매력을 느껴 퇴사 후 학원에서 프론트엔드 과정을 수료하였습니다.\n\n첫 회사는 NGO를 메인 클라이언트로 사업하는 웹 에이전시에서 다양한 프로젝트를 수행하며 경험을 쌓았고, 이후에는 eBay Japan으로 이직하여 글로벌 서비스를 운영하고 있습니다.\n\n현재 퍼블리셔 포지션이기 때문에 React.js, Vue.js 와 같은 프레임워크를 실무에서 경험한 적은 없지만 틈틈이 공부하며 트렌드를 따라가기 위해 노력하는 Junior engineer 박현아입니다.",
+			"list": [
+				"HTML, CSS등의 W3C 웹 표준에 대한 이해",
+				"웹 접근성에 대한 이해",
+				"Cross-Browsing에 대한 이해",
+				"반응형, 적응형 프로젝트 개발 경험",
+				"EJS, Haml를 이용한 프로젝트 개발 경험",
+				"CSS Preprocessor(SCSS, PCSS)를 이용한 프로젝트 개발 경험",
+				"Webpack, Gulp를 이용한 프로젝트 개발 경험",
+				"React.js에 대한 기본적인 이해",
+				"TypeScript에 대한 기본적인 이해",
+				"GitHub으로 프로젝트 협업 경험",
+				"기획, 디자인 경험이 있는 개발자로서 원활한 커뮤니케이션 능력"
+			]
+		},
+		"experience": {
+			"list": [
+				{
+					"period": "2021.01 - Present",
+					"company": "UI/UX publisher•eBay Japan",
+					"position": "Junior, UI/UX engineer team",
+					"info": "주로 Qoo10 Japan 백오피스의 Front 코드 설계 및 개발을 담당하고 있습니다. PO, 디자이너와 협업하며 스테이크 홀더가 쾌적한 환경에서 서비스를 사용할 수 있도록 개선해 나가고 있습니다.\n그 외에도 Qoo10내에서 진행되는 다양한 프로모션 및 페이지 구현에 참여하였습니다."
+				},
+				{
+					"period": "2019.02 - 2020.12",
+					"company": "Front-end developer•Slow walk",
+					"position": "Junior, Front-end team",
+					"info": "처음 입사했을 때 수습 기간 동안 좋은 평가를 받아 곧바로 라이나에서 운영하는 '전성기 재단 사이트 통합 리뉴얼 프로젝트'에서 서브 개발자로 투입하여 프로젝트를 성공적으로 마무리한 후 유지 보수 업무까지 담당하였습니다.\n라이나 프로젝트 이후에도 크고 작은 프로젝트에서 메인 개발자 역할을 맡으며 경험을 쌓았습니다."
+				},
+				{
+					"period": "2011.06 - 2017.04",
+					"company": "Planning / Marketing•E-wide plus",
+					"position": "Deputy section chief, Marketing team",
+					"info": ""
+				},
+				{
+					"period": "2010.06 - 2011.06",
+					"company": "Marketing•G2B holdings",
+					"position": "Junior, Marketing team",
+					"info": ""
+				}
+			]
+		},
+		"portfolio": {
+			"list": [
+				{
+					"closed": false,
+					"url": "https://www.qoo10.jp",
+					"imgSrc": "./images/img_project-qoo10.png",
+					"imgAlt": "Qoo10 Japan PC 웹사이트",
+					"title": "Qoo10 Japan PC 웹사이트 운영",
+					"period": "2021.01 - Present",
+					"skill": [
+						"EJS",
+						"PCSS",
+						"Javascript"
+					]
+				},
+				{
+					"closed": false,
+					"url": "https://m.qoo10.jp",
+					"imgSrc": "./images/img_project-mqoo10.png",
+					"imgAlt": "Qoo10 Japan 모바일",
+					"title": "Qoo10 Japan 모바일 웹, App 운영",
+					"period": "2021.01 - Present",
+					"skill": [
+						"EJS",
+						"PCSS",
+						"Javascript"
+					]
+				},
+				{
+					"closed": false,
+					"url": "https://qsm.qoo10.jp",
+					"imgSrc": "./images/img_project-qsm.png",
+					"imgAlt": "QSM(Qoo10 Sales Manager)",
+					"title": "QSM(Qoo10 Sales Manager) 웹사이트 운영",
+					"period": "2021.01 - Present",
+					"skill": [
+						"EJS",
+						"PCSS",
+						"Javascript"
+					]
+				},
+				{
+					"closed": false,
+					"url": "https://blog.toss.im",
+					"imgSrc": "./images/img_project-toss.png",
+					"imgAlt": "토스 블로그(토스피드)",
+					"title": "토스 블로그(토스피드) 개편",
+					"period": "2020.04 - 2020.06",
+					"skill": [
+						"HTML",
+						"SCSS",
+						"Javascript"
+					]
+				},
+				{
+					"closed": false,
+					"url": "https://www.junsungki.com",
+					"imgSrc": "./images/img_project-lina.png",
+					"imgAlt": "전성기서비스",
+					"title": "라이나전성기재단 플랫폼 통합 구축/운영 (전성기서비스)",
+					"period": "2019.03 - 2019.09",
+					"skill": [
+						"HTML",
+						"SCSS",
+						"jQuery"
+					]
+				},
+				{
+					"closed": false,
+					"url": "https://www.junsungki.com/foundation/index.do",
+					"imgSrc": "./images/img_project-lina2.png",
+					"imgAlt": "전성기재단",
+					"title": "라이나전성기재단 플랫폼 통합 구축/운영 (전성기재단)",
+					"period": "2019.03 - 2019.09",
+					"skill": [
+						"HTML",
+						"SCSS",
+						"jQuery"
+					]
+				},
+				{
+					"closed": false,
+					"url": "https://21erick.org",
+					"imgSrc": "./images/img_project-kyobasa.png",
+					"imgAlt": "교육을 바꾸는 사람들",
+					"title": "교육을 바꾸는 사람들 웹사이트 개편",
+					"period": "2020.01 - 2020.04",
+					"skill": [
+						"HTML",
+						"SCSS",
+						"jQuery"
+					]
+				},
+				{
+					"closed": true,
+					"url": "https://surc.or.kr",
+					"imgSrc": "./images/img_project-surc.png",
+					"imgAlt": "서울특별시 도시재생지원센터",
+					"title": "서울특별시 도시재생지원센터 웹사이트 운영 (웹서비스 종료)",
+					"period": "2019.07 - 2020.06",
+					"skill": [
+						"Haml",
+						"SCSS",
+						"jQuery"
+					]
+				}
+			]
+		}
+	}
+}
