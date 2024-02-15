@@ -245,6 +245,15 @@ body {
 .main section .portfolio_item.closed:hover .portfolio_img::before {
   background-color: var(--colorBlack);
 }
+.main section .portfolio_item.closed:hover .portfolio_img .img_text {
+  opacity: 0.5;
+}
+.main section .portfolio_item.closed:hover .portfolio_img .img_text::before {
+  background-image: url("./../../dist/images/icon_link_not_circle.png");
+}
+.main section .portfolio_item.permission:hover .portfolio_img .img_text::before {
+  background-image: url("./../../dist/images/icon_link_not_square.png");
+}
 .main section .portfolio_item:hover .portfolio_link {
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 20px;
@@ -271,6 +280,17 @@ body {
 }
 .main section .portfolio_item:hover .portfolio_img .img_text {
   display: block;
+}
+.main section .portfolio_item:hover .portfolio_img .img_text::before {
+  content: "";
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  background-image: url("./../../dist/images/icon_link.png");
+  background-size: cover;
+  transform: translateX(-50%);
 }
 .main section .portfolio_item:hover .portfolio_skill > li {
   color: var(--colorGrayDark);
@@ -315,6 +335,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-top: 28px;
   transform: translate(-50%, -50%);
   font-size: 12px;
   font-weight: var(--defaultFontWeight);
