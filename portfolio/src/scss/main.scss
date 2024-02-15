@@ -231,9 +231,9 @@ body {
 								.img {
 									&_text {
 										opacity: .5;
-										
+
 										&::before {
-											background-image: url("./../../dist/images/icon_link_not_circle.png");
+											background-image: url("./../images/icon_link_not_circle.png");
 										}
 									}
 								}
@@ -249,7 +249,7 @@ body {
 								.img {
 									&_text {
 										&::before {
-											background-image: url("./../../dist/images/icon_link_not_square.png");
+											background-image: url("./../images/icon_link_not_square.png");
 										}
 									}
 								}
@@ -295,7 +295,7 @@ body {
 										left: 50%;
 										width: 24px;
 										height: 24px;
-										background-image: url("./../../dist/images/icon_link.png");
+										background-image: url("./../images/icon_link.png");
 										background-size: cover;
 										transform: translateX(-50%);
 									}
