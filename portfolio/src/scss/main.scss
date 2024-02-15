@@ -54,8 +54,6 @@ body {
 		.nav {
 			&_list {
 				& > li {
-					
-	
 					& > a {
 						display: block;
 						position: relative;
@@ -229,6 +227,32 @@ body {
 								&::before {
 									background-color: var(--colorBlack);
 								}
+
+								.img {
+									&_text {
+										opacity: .5;
+										
+										&::before {
+											background-image: url("./../../dist/images/icon_link_not_circle.png");
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&.permission {
+					&:hover {
+						.portfolio {
+							&_img {
+								.img {
+									&_text {
+										&::before {
+											background-image: url("./../../dist/images/icon_link_not_square.png");
+										}
+									}
+								}
 							}
 						}
 					}
@@ -263,6 +287,18 @@ body {
 							.img {
 								&_text {
 									display: block;
+
+									&::before {
+										content: "";
+										position: absolute;
+										top: -28px;
+										left: 50%;
+										width: 24px;
+										height: 24px;
+										background-image: url("./../../dist/images/icon_link.png");
+										background-size: cover;
+										transform: translateX(-50%);
+									}
 								}
 							}
 						}
@@ -312,6 +348,7 @@ body {
 						position: absolute;
 						top: 50%;
 						left: 50%;
+						margin-top: 28px;
 						transform: translate(-50%, -50%);
 						font-size: 12px;
 						font-weight: var(--defaultFontWeight);

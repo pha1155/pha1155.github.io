@@ -83,13 +83,15 @@ const _main = _index_json.main
 			<section id="portfolio" class="portfolio">
 				<ul class="portfolio_list">
 					<% _main.portfolio.list.forEach((_item, _index) => { %>
-						<li class="portfolio_item <% if (_item.closed === true) { %>closed<% } %>">
+						<li class="portfolio_item<% if (_item.permission === true) { %> permission<% } %><% if (_item.closed === true) { %> closed<% } %>">
 							<a class="portfolio_link" href="<%- _item.url %>" target="_blank">
 								<span class="portfolio_number"><%- String(_index + 1).padStart(2, '0') %></span>
 								<div class="portfolio_img">
 									<img src="<%- _item.imgSrc %>" alt="<%- _item.imgAlt %>">
 									<span class="img_text">
-										<% if (_item.closed === true) { %>
+										<% if (_item.permission === true) { %>
+											Need permission to see
+										<% } else if (_item.closed === true) { %>
 											Link expired due to renewal
 										<% } else { %>
 											Go to website

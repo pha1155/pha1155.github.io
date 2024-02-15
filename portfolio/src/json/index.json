@@ -11,13 +11,13 @@
 	},
 	"main": {
 		"about": {
-			"info": "경영학과를 전공하였으며 첫 마케팅 회사에 입사하여 마케팅 업무를 하면서 커리어를 시작하였습니다.\n이후 웹 에이전시로 이직하면서 IT업계의 에코 시스템을 깊게 이해하게 되었습니다. 평소에 디자인에 관심이 많았지만 감각이 부족해서 직접 디자인을 하는 것에는 자신이 없었기 때문에 디자이너가 만들어준 디자인을 코드로서 유저들이 보는 화면으로 구현하는 퍼블리셔라는 직업에 매력을 느껴 퇴사 후 학원에서 프론트엔드 과정을 수료하였습니다.\n\n첫 회사는 NGO를 메인 클라이언트로 사업하는 웹 에이전시에서 다양한 프로젝트를 수행하며 경험을 쌓았고, 이후에는 eBay Japan으로 이직하여 글로벌 서비스를 운영하고 있습니다.\n\n현재 퍼블리셔 포지션이기 때문에 React.js, Vue.js 와 같은 프레임워크를 실무에서 경험한 적은 없지만 틈틈이 공부하며 트렌드를 따라가기 위해 노력하는 Junior engineer 박현아입니다.",
+			"info": "경영학과를 전공하였으며 마케팅 회사에 입사하여 마케터로서 커리어를 시작하였으나 이후 웹 에이전시로 이직하면서 IT업계의 시스템을 깊게 이해하게 되었습니다. 평소 디자인에 관심이 많았지만 감각이 부족해서 디자인을 하는 것에는 자신이 없었기 때문에 디자이너가 만들어준 디자인을 유저들이 보는 화면으로 구현하는 퍼블리셔라는 직업에 매력을 느껴 퇴사 후 학원에서 프론트엔드 과정을 수료하였습니다.\n\n첫 회사는 NGO를 메인 클라이언트로 사업하는 웹 에이전시에서 다양한 프로젝트를 수행하며 경험을 쌓았고, 현재는 eBay Japan에 이직하여 글로벌 서비스를 운영하고 있습니다.\n\n현재 퍼블리셔 포지션이기 때문에 React.js, Vue.js 와 같은 프레임워크를 실무에서 경험한 적은 없지만 틈틈이 공부하며 트렌드를 따라가기 위해 노력하는 Junior engineer 박현아입니다.",
 			"list": [
 				"HTML, CSS등의 W3C 웹 표준에 대한 이해",
 				"웹 접근성에 대한 이해",
 				"Cross-Browsing에 대한 이해",
 				"반응형, 적응형 프로젝트 개발 경험",
-				"EJS, Haml를 이용한 프로젝트 개발 경험",
+				"EJS, Haml을 이용한 프로젝트 개발 경험",
 				"CSS Preprocessor(SCSS, PCSS)를 이용한 프로젝트 개발 경험",
 				"Webpack, Gulp를 이용한 프로젝트 개발 경험",
 				"React.js에 대한 기본적인 이해",
@@ -58,6 +58,7 @@
 			"list": [
 				{
 					"closed": false,
+					"permission": false,
 					"url": "https://www.qoo10.jp",
 					"imgSrc": "./images/img_project-qoo10.png",
 					"imgAlt": "Qoo10 Japan PC 웹사이트",
@@ -71,6 +72,7 @@
 				},
 				{
 					"closed": false,
+					"permission": false,
 					"url": "https://m.qoo10.jp",
 					"imgSrc": "./images/img_project-mqoo10.png",
 					"imgAlt": "Qoo10 Japan 모바일",
@@ -83,7 +85,8 @@
 					]
 				},
 				{
-					"closed": false,
+					"closed": true,
+					"permission": true,
 					"url": "https://qsm.qoo10.jp",
 					"imgSrc": "./images/img_project-qsm.png",
 					"imgAlt": "QSM(Qoo10 Sales Manager)",
@@ -97,6 +100,7 @@
 				},
 				{
 					"closed": false,
+					"permission": false,
 					"url": "https://blog.toss.im",
 					"imgSrc": "./images/img_project-toss.png",
 					"imgAlt": "토스 블로그(토스피드)",
@@ -110,6 +114,7 @@
 				},
 				{
 					"closed": false,
+					"permission": false,
 					"url": "https://www.junsungki.com",
 					"imgSrc": "./images/img_project-lina.png",
 					"imgAlt": "전성기서비스",
@@ -123,6 +128,7 @@
 				},
 				{
 					"closed": false,
+					"permission": false,
 					"url": "https://www.junsungki.com/foundation/index.do",
 					"imgSrc": "./images/img_project-lina2.png",
 					"imgAlt": "전성기재단",
@@ -136,6 +142,7 @@
 				},
 				{
 					"closed": false,
+					"permission": false,
 					"url": "https://21erick.org",
 					"imgSrc": "./images/img_project-kyobasa.png",
 					"imgAlt": "교육을 바꾸는 사람들",
@@ -149,6 +156,7 @@
 				},
 				{
 					"closed": true,
+					"permission": false,
 					"url": "https://surc.or.kr",
 					"imgSrc": "./images/img_project-surc.png",
 					"imgAlt": "서울특별시 도시재생지원센터",
