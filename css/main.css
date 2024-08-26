@@ -191,31 +191,21 @@ body {
 .main section .experience_item + .experience_item {
   margin-top: 40px;
 }
-.main section .experience_period {
-  position: relative;
-  display: block;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  font-weight: var(--fontWeightBold);
-  font-size: 12px;
-  line-height: var(--defaultLineHeight);
-  color: var(--colorWhite);
-}
-.main section .experience_period::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 20px;
-  height: 1px;
-  background-color: var(--colorWhite);
+.main section .experience_wrap {
+  margin-bottom: 12px;
 }
 .main section .experience_company {
   font-size: 16px;
   font-weight: var(--fontWeightBold);
   line-height: var(--defaultLineHeight);
   color: var(--colorWhite);
-  margin-bottom: 12px;
+  display: inline-block;
+}
+.main section .experience_period {
+  font-weight: var(--fontWeightBold);
+  font-size: 12px;
+  line-height: var(--defaultLineHeight);
+  color: var(--colorWhite);
 }
 .main section .experience_position {
   color: var(--colorGray);
