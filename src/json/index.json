@@ -11,44 +11,45 @@
 	},
 	"main": {
 		"about": {
-			"info": "경영학을 전공하고 마케팅 회사에 입사하여 마케터로서 커리어를 시작하였으나 이후 웹 에이전시로 이직하면서 IT업계의 시스템을 깊게 이해하게 되었습니다. 평소 디자인에 관심이 많았지만 감각이 부족해서 디자인을 하는 것에는 자신이 없었기 때문에 디자이너가 만들어준 디자인을 유저들이 보는 화면으로 구현하는 퍼블리셔라는 직업에 매력을 느껴 퇴사 후 학원에서 프론트엔드 과정을 수료하였습니다.\n\n첫 회사는 NGO를 메인 클라이언트로 사업하는 웹 에이전시에서 다양한 프로젝트를 수행하며 경험을 쌓았고, 이후 eBay Japan에 이직하여 글로벌 서비스를 운영하였습니다.\n\n현재 퍼블리셔 포지션이기 때문에 React.js, Vue.js 와 같은 프레임워크를 실무에서 경험한 적은 없지만 틈틈이 공부하며 트렌드를 따라가기 위해 노력하는 Junior engineer 박현아입니다.",
+			"info": "경영학과 졸업 후, 마케팅 회사에 입사하여 마케터로서 커리어를 시작하였으나 웹 에이전시로 이직을 하면서 IT업계를 접한 것이 개발자로 전향하게 된 계기가 되었습니다.\n평소 디자인에 관심이 많아 디자인학과로 재입학하였는데 코딩 수업을 통해 코딩이 더 적성에 맞는다는 것을 알게 되었고, 유저들의 사용성을 고려하여 심미적으로 화면을 구현해 내는 프론트엔드 직군에 매력을 느껴 퇴사 후, 학원에서 프론트엔드 과정을 수료하였습니다.\n\n첫 회사는 NGO를 메인 클라이언트로 사업하는 웹 에이전시에서 토스, 라이나 등의 기업들의 프로젝트를 수행하며 경험을 쌓았고, 이후에는 Ebay Japan으로 이직하여 글로벌 서비스를 운영하는 경험을 쌓았습니다.\n\n회사의 특성상 실무에서 JS 프레임워크를 경험한 적은 없지만 동료들과의 스터디를 했으며 트렌드를 따라가기 위해 노력하는 Junior engineer 박현아입니다.",
 			"list": [
 				"HTML, CSS등의 W3C 웹 표준에 대한 이해",
 				"웹 접근성에 대한 이해",
 				"Cross-Browsing에 대한 이해",
 				"반응형, 적응형 프로젝트 개발 경험",
-				"EJS, Haml을 이용한 프로젝트 개발 경험",
+				"EJS, Haml, Bootstrap을 이용한 프로젝트 개발 경험",
 				"CSS Preprocessor(SCSS, PCSS)를 이용한 프로젝트 개발 경험",
 				"Webpack, Gulp를 이용한 프로젝트 개발 경험",
+				"GitHub으로 프로젝트 협업 경험",
 				"React.js에 대한 기본적인 이해",
 				"TypeScript에 대한 기본적인 이해",
-				"GitHub으로 프로젝트 협업 경험",
-				"기획, 디자인 경험이 있는 개발자로서 원활한 커뮤니케이션 능력"
+				"기획, 디자인 경험이 있는 개발자로서 원활한 커뮤니케이션 및 협업 능력",
+				"Figma, Zeplin, Photoshop, Illustrator 툴 사용 경험"
 			]
 		},
 		"experience": {
 			"list": [
 				{
-					"period": "2021.01 - 2024.02",
-					"company": "UI/UX publisher•eBay Japan",
+					"company": "eBay Japan",
+					"period": "UI/UX publisher 2021 - 2024",
 					"position": "Junior, UI/UX engineer team",
 					"info": "주로 Qoo10 Japan 백오피스의 Front 코드 설계 및 개발을 담당하였습니다. PO, 디자이너와 협업하며 스테이크 홀더가 쾌적한 환경에서 서비스를 사용할 수 있도록 개선하였습니다.\n그 외에도 Qoo10내에서 진행되는 다양한 프로모션 및 페이지 구현에 참여하였습니다."
 				},
 				{
-					"period": "2019.02 - 2020.12",
-					"company": "Front-end developer•Slow walk",
+					"company": "Slowalk",
+					"period": "publisher 2019 - 2020",
 					"position": "Junior, Front-end team",
 					"info": "처음 입사했을 때 수습 기간 동안 좋은 평가를 받아 곧바로 라이나에서 운영하는 '전성기 재단 사이트 통합 리뉴얼 프로젝트'에서 서브 개발자로 투입하여 프로젝트를 성공적으로 마무리한 후 유지 보수 업무까지 담당하였습니다.\n라이나 프로젝트 이후에도 크고 작은 프로젝트에서 메인 개발자 역할을 맡으며 경험을 쌓았습니다."
 				},
 				{
-					"period": "2011.06 - 2017.04",
-					"company": "Planning / Marketing•E-wide plus",
+					"company": "E-wide plus",
+					"period": "Planning / Marketing 2011 - 2017",
 					"position": "Deputy section chief, Marketing team",
 					"info": ""
 				},
 				{
-					"period": "2010.06 - 2011.06",
-					"company": "Marketing•G2B holdings",
+					"company": "G2B holdings",
+					"period": "Marketing 2010 - 2011",
 					"position": "Junior, Marketing team",
 					"info": ""
 				}
@@ -99,6 +100,20 @@
 					]
 				},
 				{
+					"closed": true,
+					"permission": false,
+					"url": "https://www.futureslab.kr",
+					"imgSrc": "./images/img_project-shinhan.png",
+					"imgAlt": "신한금융그룹 신한퓨처스랩",
+					"title": "신한금융그룹 신한퓨처스랩 커뮤니티 웹사이트 구축 (웹서비스 종료)",
+					"period": "2020.05 - 2020.12",
+					"skill": [
+						"HTML",
+						"SCSS",
+						"jQuery"
+					]
+				},
+				{
 					"closed": false,
 					"permission": false,
 					"url": "https://blog.toss.im",
@@ -110,6 +125,76 @@
 						"HTML",
 						"SCSS",
 						"Javascript"
+					]
+				},
+				{
+					"closed": true,
+					"permission": false,
+					"url": "https://hiconcept.kr",
+					"imgSrc": "./images/img_project-hiconcept.png",
+					"imgAlt": "임팩트스테이션 시공플랫폼",
+					"title": "임팩트스테이션 시공플랫폼 웹사이트 구축 (웹서비스 종료)",
+					"period": "2020.03 - 2020.04",
+					"skill": [
+						"HTML",
+						"SCSS",
+						"jQuery"
+					]
+				},
+				{
+					"closed": true,
+					"permission": false,
+					"url": "https://thinkdong.com",
+					"imgSrc": "./images/img_project-thinkdong.png",
+					"imgAlt": "띵동연구소",
+					"title": "띵동연구소 웹사이트 구축 (웹서비스 종료)",
+					"period": "2020.02 - 2020.03",
+					"skill": [
+						"HTML",
+						"SCSS",
+						"jQuery"
+					]
+				},
+				{
+					"closed": false,
+					"permission": false,
+					"url": "https://21erick.org",
+					"imgSrc": "./images/img_project-kyobasa.png",
+					"imgAlt": "교육을 바꾸는 사람들",
+					"title": "교육을 바꾸는 사람들 웹사이트 개편",
+					"period": "2020.01 - 2020.04",
+					"skill": [
+						"HTML",
+						"SCSS",
+						"jQuery"
+					]
+				},
+				{
+					"closed": true,
+					"permission": false,
+					"url": "https://playthat.me",
+					"imgSrc": "./images/img_project-playthat.png",
+					"imgAlt": "플레이댓",
+					"title": "플레이댓 웹사이트 개편 (웹서비스 종료)",
+					"period": "2019.09 - 2020.01",
+					"skill": [
+						"HTML",
+						"SCSS",
+						"jQuery"
+					]
+				},
+				{
+					"closed": true,
+					"permission": false,
+					"url": "https://surc.or.kr",
+					"imgSrc": "./images/img_project-surc.png",
+					"imgAlt": "서울특별시 도시재생지원센터",
+					"title": "서울특별시 도시재생지원센터 웹사이트 운영 (웹서비스 종료)",
+					"period": "2019.07 - 2020.06",
+					"skill": [
+						"Haml",
+						"SCSS",
+						"jQuery"
 					]
 				},
 				{
@@ -136,34 +221,6 @@
 					"period": "2019.03 - 2019.09",
 					"skill": [
 						"HTML",
-						"SCSS",
-						"jQuery"
-					]
-				},
-				{
-					"closed": false,
-					"permission": false,
-					"url": "https://21erick.org",
-					"imgSrc": "./images/img_project-kyobasa.png",
-					"imgAlt": "교육을 바꾸는 사람들",
-					"title": "교육을 바꾸는 사람들 웹사이트 개편",
-					"period": "2020.01 - 2020.04",
-					"skill": [
-						"HTML",
-						"SCSS",
-						"jQuery"
-					]
-				},
-				{
-					"closed": true,
-					"permission": false,
-					"url": "https://surc.or.kr",
-					"imgSrc": "./images/img_project-surc.png",
-					"imgAlt": "서울특별시 도시재생지원센터",
-					"title": "서울특별시 도시재생지원센터 웹사이트 운영 (웹서비스 종료)",
-					"period": "2019.07 - 2020.06",
-					"skill": [
-						"Haml",
 						"SCSS",
 						"jQuery"
 					]

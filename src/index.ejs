@@ -69,10 +69,10 @@ const _main = _index_json.main
 					<% _main.experience.list.forEach((_item) => { %>
 						<li class="experience_item">
 							<div class="experience_wrap">
-								<span class="experience_period"><%- _item.period %></span>
 								<h3 class="experience_company"><%- _item.company %></h3>
-								<h4 class="experience_position"><%- _item.position %></h4>
+								<span class="experience_period">(<%- _item.period %>)</span>
 							</div>
+							<h4 class="experience_position"><%- _item.position %></h4>
 							<% if (_item.info !== '') { %>
 								<p class="experience_info"><%- _item.info %></p>
 							<% } %>
